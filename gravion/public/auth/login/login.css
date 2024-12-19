@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.logo-container {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 600px;
+  width: 100%;
+}
+
+.sign-in-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Outfit";
+  font-weight: 600;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #333;
+  font-family: "Outfit";
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%; 
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.input-group button{
+  align-items: center;
+  margin-top: 15px;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.show-password img {
+  width: 30px;
+  height: 30px;
+}
+
+.show-password:hover img {
+  opacity: 0.7;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.options .checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.options label, a{
+  margin-bottom: 1px;
+}
+
+.options a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #026bdb;
+}
+
+.register {
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.register a {
+  color: #007bff;
+  text-decoration: none;
+}

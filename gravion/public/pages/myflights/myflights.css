@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    background-color: #000;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  header a.active {
+    font-weight: bold;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .flight-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .flight-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .flight-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  .flight-info div {
+    width: 30%;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .status-incomplete {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .flight-details {
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .flight-details p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .proceed-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .proceed-button:hover {
+    background-color: #555;
+  }
+  
+  #sign-out-button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #d9534f;
+    padding: 8px 16px;
+    border-radius: 32px;
+    transition: background-color 0.3s;
+  }
+  
+  #sign-out-button:hover {
+    background-color: #c9302c;
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  
+    .modal-content {
+      position: relative;
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  
+    .btn-confirm {
+      background-color: #28a745;
+      color: white;
+    }
+  
+    .btn-cancel {
+      background-color: #dc3545;
+      color: white;
+      margin-left: 10px;
+    }
+  
+    .modal-actions {
+      margin-top: 20px;
+    }
+  }
+  

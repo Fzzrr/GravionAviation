@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to bottom, #f3f4f6, #e2e8f0);
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+  color: white; 
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+header nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: white;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: black;
+}
+
+header .sign-in {
+  background: #333;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+header .sign-in:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 150px 20px 100px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #e2e8f0); 
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.hero img.jet-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px 0;
+  filter: brightness(0.9);
+}
+
+.hero-buttons .button {
+  background: #333;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.hero-buttons .button-outline {
+  background: transparent;
+  border: 2px solid #333;
+  color: #333;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  margin: 50px 0 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Card Section */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 250px; /* Tentukan lebar maksimal kartu */
+  flex: 1; /* Agar kartu fleksibel */
+  max-width: 300px; /* Batasi lebar maksimal */
+}
+
+.card .image img {
+  width: 100%; /* Pastikan gambar mengisi ruang */
+  height: 200px; /* Tetapkan tinggi tetap */
+  object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+  border-radius: 8px; /* Opsional untuk membuat sudut melengkung */
+}
+
+.card-container {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+
+
+.card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.welcome-message {
+  margin-right: 3px; /* Menambahkan jarak antara pesan sambutan dan tombol logout */
+}
+
+@media (max-width: 768px) {
+  .card-container {
+      flex-direction: column; /* Susun kartu secara vertikal di layar kecil */
+      align-items: center;
+  }
+}
+
+
+/* cta */
+.cta-section {
+  background: linear-gradient(to bottom, #2c3e50, #4a69bd);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.cta-section .cta-button {
+  background: #333;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  background: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
